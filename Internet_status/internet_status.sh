@@ -1,6 +1,6 @@
 #!/bin/bash
 
-'
+:'
 The following script has been developed to automate testing of internet connectivity with end users.
 This script is authored in Bash and is bundled as an application using Platypus.
 You have the flexibility to modify the DNS providers to suit your specific location.
