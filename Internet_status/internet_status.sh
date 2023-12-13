@@ -1,20 +1,20 @@
 #!/bin/bash
 
-:'
+<<comment
 The following script has been developed to automate testing of internet connectivity with end users.
 This script is authored in Bash and is bundled as an application using Platypus.
 You have the flexibility to modify the DNS providers to suit your specific location.
 The script is designed to provide different prompts in case of internet connectivity failure.
 This is version 1.1, added additional dns providers, changed the output to funny phrases.
-'
+comment
 
 dns_providers=("8.8.8.8" "8.8.4.4" "1.1.1.1" "1.0.0.1" "208.67.222.222" "208.67.220.220")
 
-phrases=("Almost at the finish line" "Just a bit more to go" "Few more steps to success" "Almost within reach" "Just a heartbeat away from success" "The finish line is in sight" "Just around the corner")
+phrases=("1/6 Almost at the finish line" "2/6 Just a bit more to go" "3/6 Few more steps to success" "4/6 Almost within reach" "5/6 The finish line is in sight" "6/6 Just around the corner")
 
 funny_failure_phrases=("Seems like I've hit a little snag" "Well, isn't that a pickle" "Houston, we have a problem" "That wasn't on the agenda" "A little hiccup on the way" "Aw, shucks!")
 
-echo "Pinging the top DNS providers three times each:"
+echo "Pinging the top DNS providers three times each: Loading......:"
 echo "---------------------------------------"
 
 failed_providers=()
